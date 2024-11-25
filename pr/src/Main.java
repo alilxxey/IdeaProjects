@@ -7,12 +7,11 @@ class Task3 {
         for (int number : numbers) {
             sum += number; // суммируем элементы
         }
-        double average = (double) sum / numbers.length; // находим среднее арифметическое
+        double a = (double) sum / numbers.length; // находим среднее арифметическое
         System.out.println("Сумма элементов массива: " + sum);
-        System.out.println("Среднее арифметическое: " + average);
+        System.out.println("Среднее арифметическое: " + a);
     }
 }
-
 
 class Task4 {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ class Task4 {
         System.out.print("Введите количество элементов массива: ");
         int n = sc.nextInt();
         int[] numbers = new int[n];
-        int sum = 0, max, min;
+        int sum = 0, mx, mi;
 
         int i = 0;
         do {
@@ -29,24 +28,24 @@ class Task4 {
             i++;
         } while (i < n);
 
-        max = numbers[0];
-        min = numbers[0];
+        mx = numbers[0];
+        mi = numbers[0];
 
         i = 0;
         while (i < n) {
             sum += numbers[i];
-            if (numbers[i] > max) {
-                max = numbers[i];
+            if (numbers[i] > mx) {
+                mx = numbers[i];
             }
-            if (numbers[i] < min) {
-                min = numbers[i];
+            if (numbers[i] < mi) {
+                mi = numbers[i];
             }
             i++;
         }
 
         System.out.println("Сумма элементов массива: " + sum);
-        System.out.println("Максимальный элемент: " + max);
-        System.out.println("Минимальный элемент: " + min);
+        System.out.println("Максимальный элемент: " + mx);
+        System.out.println("Минимальный элемент: " + mi);
     }
 }
 

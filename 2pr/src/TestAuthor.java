@@ -1,11 +1,11 @@
 public class TestAuthor {
     public static void main(String[] args) {
-        Author author = new Author("John Doe", "john.doe@example.com", 'M');
+        Author author = new Author("Alexey Tyunkin", "none", 'M');
 
         System.out.println(author);
 
-        author.setEmail("john.new@example.com");
+        author.setEmail("tyunkin@google.com");
 
-        System.out.println("Updated email: " + author.getEmail());
+        System.out.println(author);
     }
 }

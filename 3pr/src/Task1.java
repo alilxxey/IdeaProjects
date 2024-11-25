@@ -17,7 +17,7 @@ public class Task1 {
         System.out.println("Math.random(): ");
         System.out.println(Arrays.toString(arrMath));
         Arrays.sort(arrMath);
-        System.out.println("Sorted: ");
+        System.out.println("sorted: ");
         System.out.println(Arrays.toString(arrMath));
 
         System.out.println("Random: ");

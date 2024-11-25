@@ -34,13 +34,13 @@ public class Shop {
 
     public static void main(String[] args) {
         Shop shop = new Shop();
-        shop.addComputer(new Computer("Apple", "MacBook Pro"));
-        shop.addComputer(new Computer("Dell", "XPS 15"));
-        shop.addComputer(new Computer("HP", "Pavilion"));
+
+        shop.addComputer(new Computer("Apple", "MacBook"));
+        shop.addComputer(new Computer("ACER", "super"));
 
         System.out.println(shop);
 
-        Computer found = shop.findComputer("Apple", "MacBook Pro");
+        Computer found = shop.findComputer("Apple", "MacBook");
         System.out.println("Found: " + (found != null ? found : "Not found"));
     }
 }
